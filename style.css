@@ -41,24 +41,23 @@ body {
 .nav-bar {
     position: fixed;
     bottom: 0;
-    left: 50%;
-    transform: translateX(-50%) translateY(100%);
-    width: 90%;
+    left: 0;
+    width: 100%;
     display: none;
     flex-direction: row;
     justify-content: space-around;
     gap: 10px;
     z-index: 999;
     background: white;
-    padding: 15px;
-    border-radius: 20px 20px 0 0;
+    padding: 10px;
     box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.1);
+    transform: translateY(100%);
     transition: transform 0.3s ease;
 }
 
 .nav-bar.open {
     display: flex;
-    transform: translateX(-50%) translateY(0);
+    transform: translateY(0);
 }
 
 .nav-tab {
