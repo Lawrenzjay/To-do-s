@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Do List</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <button class="hamburger" id="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+    </button>
+    <nav class="nav-bar" id="nav-bar">
+        <button class="nav-tab active" data-status="todo">To-Do</button>
+        <button class="nav-tab" data-status="ongoing">Ongoing</button>
+        <button class="nav-tab" data-status="done">Done</button>
+    </nav>
+    <div class="main-content">
+        <div class="todo-card">
+            <h1>To-Do List</h1>
+            <div class="input-section" id="input-section">
+                <input type="text" id="task-input" placeholder="Add a new task..." maxlength="100">
+                <button id="add-btn">Add Task</button>
+            </div>
+            <div class="stats">
+                <span id="total-tasks">Total: 0</span>
+                <span id="completed-tasks">Completed: 0</span>
+            </div>
+            <ul id="task-list"></ul>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
